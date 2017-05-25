@@ -79,6 +79,6 @@ public class DB2Dialect implements IDialect {
         } else {
             pagingSelect.append("<= ").append(limit);
         }
-        return null;
+        return pagingSelect.toString();
     }
 }
